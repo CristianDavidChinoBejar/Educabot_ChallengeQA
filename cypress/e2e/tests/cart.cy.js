@@ -1,20 +1,20 @@
 /// <reference types="cypress" />
 
 import CartPage from '../pages/cartPage'
-import loginPage from '../pages/loginPage'
 
 describe('Validación del carrito de compras', () => {
   beforeEach(() => {
     cy.visit('/')
-    loginPage.typeUsername("standard_user")
-    loginPage.typePassword("secret_sauce")
-    loginPage.clickLoginButton()
+    cy.fixture('users').then((user) => {
+      const standardUser = user.standard;
+      cy.login(standardUser.username, standardUser.password);
+    })
+
     CartPage.clickAddToCartSauceLabsBackpack()
     CartPage.elements.cartIcon().should('have.text', '1')
     CartPage.clickCartIcon()
   })
 
-  
   it('Validar que un producto se agregue correctamente', () => {
     CartPage.elements.inventoryItem().should('have.length', 1)
   });

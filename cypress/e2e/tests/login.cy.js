@@ -10,9 +10,7 @@ describe('Validación del login', () => {
 
   tests.forEach(test => {
     it(test.name, () => {
-      loginPage.typeUsername(test.userName)
-      loginPage.typePassword(test.password)
-      loginPage.clickLoginButton()
+      cy.login(test.userName, test.password)
 
     if (test.type === "success") {
       cy.url().should('include', test.expected)
