@@ -11,6 +11,11 @@ Antes de comenzar, tener instalado:
 - [npm](https://www.npmjs.com/)
 - [Java](https://www.oracle.com/java/technologies/javase-downloads.html) (versión 11 o superior, requerido por Allure report)
 
+Para verificar que versión de JAVA tenes instalada, ejecutar en el CMD el siguiente comando:
+```bash
+java -version
+```
+
 ### Requisitos
 
 Clonar el repositorio
