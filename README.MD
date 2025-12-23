@@ -37,7 +37,7 @@ npm run cypress:open
 El proyecto ya está listo para ejecutar los test E2E y en Google Chrome, solo tenes que seleccionar la suite que queres ejecutar.
 
 ### Ejecución en modo headless con reportes de Allure report
-Ejecutar los siguientes comandos en el siguiente orden:
+Ejecutar los comandos en el siguiente orden:
 
 ```bash
 npm run test:e2e
