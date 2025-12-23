@@ -3,7 +3,7 @@
 import CartPage from '../pages/cartPage'
 import loginPage from '../pages/loginPage'
 
-describe('Validación del login', () => {
+describe('Validación del carrito de compras', () => {
   beforeEach(() => {
     cy.visit('/')
     loginPage.typeUsername("standard_user")
