@@ -14,22 +14,12 @@ describe('Validación del login', () => {
       loginPage.typePassword(test.password)
       loginPage.clickLoginButton()
 
-    switch (test.name) {
-      case "Verificar Login exitoso con credenciales válidas":
-        cy.url().should('include', test.expected)
-        break;
-
-      case "Verificar Login erroneo con usuario inválido":
-        loginPage.elements.errorMessage()
-          .should('be.visible')
-          .and('have.text', test.expected)
-        break;
-
-      case "Verificar Login con user bloqueado":
-        loginPage.elements.errorMessage()
-          .should('be.visible')
-          .and('have.text', test.expected)
-        break;
+    if (test.type === "success") {
+      cy.url().should('include', test.expected)
+    } else if (test.type === "error") {
+      loginPage.elements.errorMessage()
+        .should('be.visible')
+        .and('have.text', test.expected)
       }
     })
   })
