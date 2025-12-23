@@ -1,7 +1,7 @@
 # Educabot - Challenge QA
 
-Este repositorio contiene las respuestas y recursos del **Challenge QA de Educabot**.  
-El objetivo es demostrar habilidades en **automatización de pruebas con Cypress**, manejo de **reportes (Allure)** y buenas prácticas de **QA manual y automatizado**.
+Este repositorio contiene la resolución del **Challenge QA de Educabot**.  
+El objetivo es demostrar habilidades en **Automatización de pruebas con Cypress**, manejo de **reportes (Allure)** y buenas prácticas de **QA manual y Automatización**.
 
 ## Comenzando
 
