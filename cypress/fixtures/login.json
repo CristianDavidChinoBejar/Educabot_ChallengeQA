@@ -18,6 +18,6 @@
     "userName": "fake_user",
     "password": "secret_sauce",
     "type": "error",
-    "expected": "Epic sadface: Username and password do not match any user in this service"
+    "expected": "Epic sadface: Username and password do not match any user in this service TEST ERROR"
   }
 ]
