@@ -51,5 +51,7 @@ npm run report:open
 ```
 Este último comando abrira automaticamente el reporte de Allure report.
 
-### Importante
+### 📊 Importante
 Las evidencias de los test fallidos se deberan desplegar desde el reporte generado, Allure report no los muestra desplegados automaticamente por un tema de armonia visual de los test.
+
+![Reporte Allure](./assets/image_allure_report.png)
