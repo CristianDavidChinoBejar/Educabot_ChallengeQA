@@ -21,7 +21,11 @@ java -version
 Clonar el repositorio
 ```bash
 git clone https://github.com/CristianDavidChinoBejar/Educabot_ChallengeQA.git
+```
+```bash
 cd Educabot_ChallengeQA
+```
+```bash
 code .
 ```
 
